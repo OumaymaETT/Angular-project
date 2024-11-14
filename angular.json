@@ -94,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -102,5 +103,8 @@
       }
     }
   },
-  "defaultProject": "ExosAngular"
+  "defaultProject": "ExosAngular",
+  "cli": {
+    "analytics": false
+  }
 }

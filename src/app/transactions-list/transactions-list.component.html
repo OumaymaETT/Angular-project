@@ -1,0 +1,22 @@
+
+
+<div class="transactions-list">
+  <table>
+    <thead>
+      <tr>
+        <th (click)="sortTransactions('date')">Date</th>
+        <th (click)="sortTransactions('amount')">Montant</th>
+        <th (click)="sortTransactions('balance')">Solde</th>
+        <th (click)="sortTransactions('label')">Label</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transaction of transactions" [routerLink]="['/transaction', transaction.id]">
+        <td>{{ transaction.date }}</td>
+        <td>{{ transaction.amount }}</td>
+        <td>{{ transaction.balance }}</td>
+        <td>{{ transaction.label }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
