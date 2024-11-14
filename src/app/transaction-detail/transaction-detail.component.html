@@ -1,10 +1,9 @@
-
-<div *ngIf="transaction">
+<div *ngIf="transaction" class="transaction-detail">
   <h2>Détail de la Transaction</h2>
-  <p>ID: {{ transaction.id }}</p>
-  <p>Date: {{ transaction.date }}</p>
-  <p>Montant: {{ transaction.amount }}</p>
-  <p>Solde: {{ transaction.balance }}</p>
-  <p>Label: {{ transaction.label }}</p>
-  <p>Description: {{ transaction.description }}</p>
+  <p><span>ID:</span> {{ transaction.id }}</p>
+  <p><span>Date:</span> {{ transaction.date }}</p>
+  <p><span>Montant:</span> {{ transaction.amount }}</p>
+  <p><span>Solde:</span> {{ transaction.balance }}</p>
+  <p><span>Label:</span> {{ transaction.label }}</p>
+  <p><span>Description:</span> {{ transaction.description }}</p>
 </div>

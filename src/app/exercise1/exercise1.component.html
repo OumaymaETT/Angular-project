@@ -1,7 +1,4 @@
-
-
 <div>
-  <!-- Champ de saisie pour le nom -->
   <input
     type="text"
     placeholder="Entrez votre nom"
@@ -25,11 +22,9 @@
   <label><input type="radio" name="alignment" [(ngModel)]="alignment" value="center"> Centré</label>
   <label><input type="radio" name="alignment" [(ngModel)]="alignment" value="right"> Droite</label>
 
-  <p [ngStyle]="{'font-family': fontFamily, 'font-size.px': fontSize, 'text-align': alignment}">
+  <p [ngStyle]="{'font-family': fontFamily, 'font-size.px': fontSize, 'text-align': alignment}" class="styled-text">
     Bonjour {{ name | uppercase }} !
   </p>
-  <div class="alert alert-success" role="alert">
-    Bootstrap fonctionne correctement dans votre projet Angular !
-  </div>
+
 
 </div>
