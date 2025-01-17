@@ -1,0 +1,16 @@
+# Ignorer les dépendances Node.js
+node_modules
+
+# Ignorer les fichiers générés
+dist
+
+# Ignorer les métadonnées Git
+.git
+
+# Ignorer les logs
+*.log
+
+# Ignorer les caches et fichiers spécifiques aux outils/OS
+.vscode
+.angular
+.DS_Store
