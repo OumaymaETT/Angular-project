@@ -25,3 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Project Dockerization
+
+This project uses Docker to build and run a containerized version of the Angular application.
+
+### Instructions
+
+1. **Build the Docker image:**
+   ```bash
+   docker build -t my-angular-project .
+1. **Build the Docker image:**
+   ```bash
+   docker build -t my-angular-project .
+2. **Run the container:**
+   ```bash
+   docker run -d -p 8080:80 my-angular-project
+3. **Access the application: Open a browser and go to:**
+   http://localhost:8080
